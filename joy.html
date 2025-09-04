@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joy Novel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ปุ่มสลับโหมด -->
+  <button id="toggle-dark">🌙 Dark Mode</button>
+
+
+  <!-- เมนู -->
+  <nav class="topnav">
+    <a href="index.html">Home</a>
+    <a href="joy.html">Joy</a>
+    <a href="novel.html">นิยาย</a>
+    <a href="live.html">ไลฟ์</a>
+    <a href="feed.html">ฟีด</a>
+    <a href="lnbox.html">กล่องข้อความ</a>
+    <a href="profile.html">โปรไฟล์</a>
+  </nav>
+  <!-- Joy -->
+   
+  <section id="joy.html">
+    <div class="banner">
+      <img src="เขรมจิรา.png" alt="banner">
+      <h1 class="banner-text">เขมจิราต้องรอด</h1>
+    </div>
+    <div class="novel-list">
+      <div class="novel-card"><img src="พระเอกตัวร้าย.png"><p class="views">437,576</p><h3>เมื่อพระเอกตัวร้าย...</h3></div>
+      <div class="novel-card"><img src="เสน่หา.png"><p class="views">1,329,848</p><h3>เสน่หาเพียงเธอ</h3></div>
+      <div class="novel-card"><img src="ตกหลุมรัก.png"><p class="views">1,531,661</p><h3>Engineering Kingdom</h3></div>
+       <div class="novel-card"><img src="ย้อยเวลา.png"><p class="views">3,374,896</p><h3>ย้อยเวลามาเป็นพระชายาไขคดี</h3></div>
+        <div class="novel-card"><img src="คุณไสย์.png"><p class="views">208,012,017</p><h3>คุณไสยไตรเดือน</h3></div>
+    </div>
+  </section>
+    <!-- Script toggle -->
+  <script>
+    const toggleBtn = document.getElementById("toggle-dark");
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      toggleBtn.textContent = document.body.classList.contains("dark-mode") 
+        ? "☀️ Light Mode" 
+        : "🌙 Dark Mode";
+    });
+  </script>
+
+</body>
+</html>
